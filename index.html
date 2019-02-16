@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>风险管理的程序</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="../../common/css/swiper-3.4.0.min.css">
+	<script src="../../common/js/swiper-3.4.0.min.js"></script>
+	<script src="../../common/js/jquery-3.1.1.min.js"></script>
+	<link rel="stylesheet" href="../../common/css/animate.min.css">
+	<link rel="stylesheet" href="../../common/css/anima.css">
+	<script src="../../common/js/audio.min.js"></script>
+	<link rel="stylesheet" href="../../common/css/common.css">
+	<link rel="stylesheet" href="css/style.css?v=90">
+</head>
+<body>
+<div class="body">
+	<!-- <div id='wx_logo' style='margin:0 auto;display:none;'>
+	</div> -->
+	<!-- 加载 -->
+	<div class="loadpage" id="loadpage">
+		<div class="loading">
+			<img src="../../common/img/logo.png" alt="" class="loadimg">
+			<div><input type="text" size="25" class="progressbar" id="progressbar" readonly="readonly"/></div>
+			<div><input type="text" size="25" class="percent" id="percent" readonly="readonly"/></div>
+			<div><img src="../../common/img/loadtxt1.png" class="loadtxt1"></div>
+			<div><img src="../../common/img/loadtxt2.png" class="loadtxt2"></div>
+		</div>
+	</div>
+	<!-- 右边按钮	start -->
+	<div class="rightbtn" id="rightbtn">
+		<div class="music" id="music">
+			<img src="../../common/img/play.png" alt="">
+		</div>
+		<div class="donghua" id="donghua">
+			<img src="../../common/img/dh1.png">
+		</div>
+	</div>
+	<!-- 右边按钮end -->
+	<div class="wrap swiper-container" id="wrap">
+		<div class="swiper-wrapper">
+			<div class="wp swiper-slide" id="page1">
+				<div class="p_bg p1_bg">
+					<img src="../../common/img/zhenhua1.png" class="p1_zhenhua">
+					<img src="img/page1/p1_txt1.png" class="p1_txt1 op0">
+					<!-- <img src="img/page1/p1_txt2.png" class="p1_txt2 op0"> -->
+					<img src="../../common/img/page1/p1_logo.png" class="p1_logo op0">
+					<img src="../../common/img/page1/p1_line.png" class="p1_line op0">
+					<img src="../../common/img/page1/p1_bottom1.png" class="p1_bottom op0">
+					<div class="animate" id="animate">
+						<p class="animatep" id="animatep">动画:开</p>
+							<div class="ellipse ellipse1" id="ellipse1">
+					     	<div class="circle circle1" id="circle1"></div>
+					    </div>
+					    <div class="both"></div>
+					</div>
+					<div class="p1_music">
+						<p class="musicp" id="musicp">声音:开</p>
+						<div class="ellipse ellipse2" id="ellipse2">
+	     				 	<div class="circle circle2" id="circle2"></div>
+	    				</div>
+    				</div>
+				</div>
+				<div class="up up1 op0"><img src="../../common/img/up.png" alt=""></div>
+			</div>
+			<div class="wp swiper-slide" id="page2">
+				<div class="p_bg p_bg1 p2_bg">
+					<div class="w100 p2_part1">
+						<img src="img/page2/p2_img.png" class="p2_img op0">
+						<img src="img/page2/p2_ttxt.png" class="p2_ttxt op0">
+						<img src="img/page2/p2_down.png" class="p2_down op0">
+						<img src="img/page2/p2_dtxt.png" class="p2_dtxt op0">
+						<div class="w100 p2_cont">
+							<img src="img/page2/p2_say1.png" class="p2_say1 op0">
+							<img src="img/page2/p2_say2.png" class="p2_say2 op0">
+							<img src="img/page2/p2_building.png" class="p2_building op0">
+							<img src="img/page2/p2_man.png" class="p2_man op0">
+							<img src="img/page2/p2_btxt.png" class="p2_btxt op0">
+						</div>
+					</div>
+				</div>
+				<div class="p_bg p_bg2 p2_bg none">
+					<div class="w100 p2_part1">
+						<img src="img/page2/p2_img.png" class="p2_img">
+						<img src="img/page2/p2_ttxt.png" class="p2_ttxt">
+						<img src="img/page2/p2_down.png" class="p2_down">
+						<img src="img/page2/p2_dtxt.png" class="p2_dtxt">
+						<div class="w100 p2_cont">
+							<img src="img/page2/p2_say1.png" class="p2_say1">
+							<img src="img/page2/p2_say2.png" class="p2_say2">
+							<img src="img/page2/p2_building.png" class="p2_building">
+							<img src="img/page2/p2_man.png" class="p2_man">
+							<img src="img/page2/p2_btxt.png" class="p2_btxt">
+						</div>
+					</div>
+				</div>
+				<div class="up up2 op0"><img src="../../common/img/up.png" alt=""></div>
+			</div>
+			<div class="wp swiper-slide" id="page3">
+				<img src="../../common/img/mark.png" class="p3_mark">
+				<div class="p_bg p_bg1 p3_bg">
+					<div class="w100 p3_part1">
+						<img src="img/page3/p3_img.png" class="p3_img op0">
+						<img src="img/page3/p3_ttxt.png" class="p3_ttxt op0">
+						<img src="img/page3/p3_line.png" class="p3_line op0">
+						<img src="img/page3/p3_ktxt1.png" class="p3_ktxt p3_ktxt1 op0">
+						<img src="img/page3/p3_ktxt2.png" class="p3_ktxt p3_ktxt2 op0">
+						<img src="img/page3/p3_ktxt3.png" class="p3_ktxt p3_ktxt3 op0">
+						<img src="img/page3/p3_ktxt4.png" class="p3_ktxt p3_ktxt4 op0">
+						<img src="img/page3/p3_ktxt5.png" class="p3_ktxt p3_ktxt5 op0">
+					</div>
+				</div>
+				<div class="p_bg p_bg2 p3_bg none">
+					<div class="w100 p3_part1">
+						<img src="img/page3/p3_img.png" class="p3_img">
+						<img src="img/page3/p3_ttxt.png" class="p3_ttxt">
+						<img src="img/page3/p3_line.png" class="p3_line">
+						<img src="img/page3/p3_ktxt1.png" class="p3_ktxt p3_ktxt1">
+						<img src="img/page3/p3_ktxt2.png" class="p3_ktxt p3_ktxt2">
+						<img src="img/page3/p3_ktxt3.png" class="p3_ktxt p3_ktxt3">
+						<img src="img/page3/p3_ktxt4.png" class="p3_ktxt p3_ktxt4">
+						<img src="img/page3/p3_ktxt5.png" class="p3_ktxt p3_ktxt5">
+					</div>
+				</div>
+				<div class="up up3 op0"><img src="../../common/img/up.png" alt=""></div>
+			</div>
+			<div class="wp swiper-slide" id="page4">
+				<div class="p_bg p_bg1 p4_bg">
+					<img src="img/page4/p4_title.png" class="p_title p4_title p4_title_active op0">
+					<div class="w100 p4_part1">
+						<img src="img/page4/p4_ltxt.png" class="p4_ltxt op0">
+						<img src="img/page4/p4_line.png" class="p4_line op0">
+						<img src="img/page4/p4_ktxt1.png" class="p4_ktxt p4_ktxt1 op0">
+						<img src="img/page4/p4_ktxt2.png" class="p4_ktxt p4_ktxt2 op0">
+						<img src="img/page4/p4_rtxt1.png" class="p4_rtxt p4_rtxt1 op0">
+						<img src="img/page4/p4_rtxt2.png" class="p4_rtxt p4_rtxt2 op0">
+						<img src="img/page4/p4_img1.png" class="p4_img1 op0">
+						<img src="img/page4/p4_img2.png" class="p4_img2 op0">
+					</div>
+				</div>
+				<div class="p_bg p_bg2 p4_bg none">
+					<img src="img/page4/p4_title.png" class="p_title p4_title">
+					<div class="w100 p4_part1">
+						<img src="img/page4/p4_ltxt.png" class="p4_ltxt">
+						<img src="img/page4/p4_line.png" class="p4_line">
+						<img src="img/page4/p4_ktxt1.png" class="p4_ktxt p4_ktxt1">
+						<img src="img/page4/p4_ktxt2.png" class="p4_ktxt p4_ktxt2">
+						<img src="img/page4/p4_rtxt1.png" class="p4_rtxt p4_rtxt1">
+						<img src="img/page4/p4_rtxt2.png" class="p4_rtxt p4_rtxt2">
+						<img src="img/page4/p4_img1.png" class="p4_img1">
+						<img src="img/page4/p4_img2.png" class="p4_img2">
+					</div>
+				</div>
+				<div class="up up4 op0"><img src="../../common/img/up.png" alt=""></div>
+			</div>
+			<div class="wp swiper-slide" id="page5">
+				<div class="p_bg p_bg1 p5_bg">
+					<img src="img/page4/p4_title.png" class="p_title p4_title">
+					<img src="img/page5/p5_ttxt.png" class="p5_ttxt op0">
+					<div class="w100 p5_part1">
+						<img src="img/page5/p5_doctor.png" class="p5_doctor op0">
+						<img src="img/page5/p5_jian1.png" class="p5_jian1 op0">
+						<img src="img/page5/p5_jian2.png" class="p5_jian2 op0">
+						<img src="img/page5/p5_jian3.png" class="p5_jian3 op0">
+						<img src="img/page5/p5_ctxt.png" class="p5_ctxt op0">
+						<div class="w100 p5_cont op0">
+							<img src="img/page5/p5_otxt.png" class="p5_otxt op0">
+							<img src="img/page5/p5_btxt.png" class="p5_btxt op0">
+							<img src="img/page5/p5_point1.png" class="p5_point p5_point1 op0">
+							<img src="img/page5/p5_point2.png" class="p5_point p5_point2 op0">
+						</div>
+					</div>
+				</div>
+				<div class="p_bg p_bg2 p5_bg none">
+					<img src="img/page4/p4_title.png" class="p_title p4_title">
+					<img src="img/page5/p5_ttxt.png" class="p5_ttxt">
+					<div class="w100 p5_part1">
+						<img src="img/page5/p5_doctor.png" class="p5_doctor">
+						<img src="img/page5/p5_jian1.png" class="p5_jian1">
+						<img src="img/page5/p5_jian2.png" class="p5_jian2">
+						<img src="img/page5/p5_jian3.png" class="p5_jian3">
+						<img src="img/page5/p5_ctxt.png" class="p5_ctxt">
+						<div class="w100 p5_cont">
+							<img src="img/page5/p5_otxt.png" class="p5_otxt">
+							<img src="img/page5/p5_btxt.png" class="p5_btxt">
+							<img src="img/page5/p5_point1.png" class="p5_point p5_point1">
+							<img src="img/page5/p5_point2.png" class="p5_point p5_point2">
+						</div>
+					</div>
+				</div>
+				<div class="up up5 op0"><img src="../../common/img/up.png" alt=""></div>
+			</div>
+			<div class="wp swiper-slide" id="page6">
+				<div class="p_bg p_bg1 p6_bg">
+					<img src="img/page6/p6_title.png" class="p_title p6_title op0">
+					<img src="img/page6/p6_ktxt.png" class="p6_ktxt op0">
+					<img src="img/page6/p6_ttxt.png" class="p6_ttxt op0">
+					<img src="img/page6/p6_lizi.png" class="p6_lizi op0">
+					<div class="w100 p6_part1">
+						<img src="img/page6/p6_lbiao1.png" class="p6_lbiao p6_lbiao1 op0">
+						<img src="img/page6/p6_lbiao2.png" class="p6_lbiao p6_lbiao2 op0">
+						<img src="img/page6/p6_rbiao.png" class="p6_rbiao op0">
+						<img src="img/page6/p6_man.png" class="p6_man op0">
+						<img src="img/page6/p6_yuan.png" class="p6_yuan op0">
+						<img src="img/page6/p6_btxt.png" class="p6_btxt op0">
+					</div>
+				</div>
+				<div class="p_bg p_bg2 p6_bg none">
+					<img src="img/page6/p6_title.png" class="p_title p6_title">
+					<img src="img/page6/p6_ktxt.png" class="p6_ktxt">
+					<img src="img/page6/p6_ttxt.png" class="p6_ttxt">
+					<img src="img/page6/p6_lizi.png" class="p6_lizi">
+					<div class="w100 p6_part1">
+						<img src="img/page6/p6_lbiao1.png" class="p6_lbiao p6_lbiao1">
+						<img src="img/page6/p6_lbiao2.png" class="p6_lbiao p6_lbiao2">
+						<img src="img/page6/p6_rbiao.png" class="p6_rbiao">
+						<img src="img/page6/p6_man.png" class="p6_man">
+						<img src="img/page6/p6_yuan.png" class="p6_yuan">
+						<img src="img/page6/p6_btxt.png" class="p6_btxt">
+					</div>
+				</div>
+				<div class="up up6 op0"><img src="../../common/img/up.png" alt=""></div>
+			</div>
+			<div class="wp swiper-slide" id="page7">
+				<img src="../../common/img/mark.png" class="p7_mark">
+				<div class="p_bg p_bg1 p7_bg">
+					<img src="img/page7/p7_title.png" class="p_title p7_title op0">
+					<img src="img/page7/p7_ktxt.png" class="p7_ktxt op0">
+					<img src="img/page7/p7_ttxt.png" class="p7_ttxt op0">
+					<img src="img/page6/p6_lizi.png" class="p7_lizi op0">
+					<div class="w100 p7_part1">
+						<img src="img/page7/p7_say.png" class="p7_say op0">
+						<img src="img/page7/p7_doctor.png" class="p7_doctor op0">
+						<img src="img/page7/p7_limg.png" class="p7_limg op0">
+						<img src="img/page7/p7_rimg.png" class="p7_rimg op0">
+						<img src="img/page7/p7_btxt.png" class="p7_btxt op0">
+					</div>
+				</div>
+				<div class="p_bg p_bg2 p7_bg none">
+					<img src="img/page7/p7_title.png" class="p_title p7_title">
+					<img src="img/page7/p7_ktxt.png" class="p7_ktxt">
+					<img src="img/page7/p7_ttxt.png" class="p7_ttxt">
+					<img src="img/page6/p6_lizi.png" class="p7_lizi">
+					<div class="w100 p7_part1">
+						<img src="img/page7/p7_say.png" class="p7_say">
+						<img src="img/page7/p7_doctor.png" class="p7_doctor">
+						<img src="img/page7/p7_limg.png" class="p7_limg">
+						<img src="img/page7/p7_rimg.png" class="p7_rimg">
+						<img src="img/page7/p7_btxt.png" class="p7_btxt">
+					</div>
+				</div>
+				<div class="up up7 op0"><img src="../../common/img/up.png" alt=""></div>
+			</div>
+			<div class="wp swiper-slide" id="page8">
+				<div class="p_bg p_bg1 p8_bg">
+					<img src="img/page8/p8_title.png" class="p_title p8_title op0">
+					<div class="w100 p8_part1">
+						<img src="img/page8/p8_otxt.png" class="p8_otxt op0">
+						<img src="img/page8/p8_ttxt.png" class="p8_ttxt op0">
+						<img src="img/page8/p8_line.png" class="p8_line op0">
+						<img src="img/page8/p8_ktxt1.png" class="p8_ktxt p8_ktxt1 op0">
+						<img src="img/page8/p8_ktxt2.png" class="p8_ktxt p8_ktxt2 op0">
+						<img src="img/page6/p6_lizi.png" class="p8_lizi op0">
+						<div class="w100 p8_cont">
+							<img src="img/page8/p8_blue.png" class="p8_blue p8_blue1 op0">
+							<img src="img/page8/p8_blue.png" class="p8_blue p8_blue2 op0">
+							<img src="img/page8/p8_tgray.png" class="p8_tgray p8_tgray1 op0">
+							<img src="img/page8/p8_tgray.png" class="p8_tgray p8_tgray2 op0">
+							<img src="img/page8/p8_bgray.png" class="p8_bgray p8_bgray1 op0">
+							<img src="img/page8/p8_bgray.png" class="p8_bgray p8_bgray2 op0">
+							<img src="img/page8/p8_wtxt1.png" class="p8_wtxt p8_wtxt1 op0">
+							<img src="img/page8/p8_wtxt2.png" class="p8_wtxt p8_wtxt2 op0">
+							<img src="img/page8/p8_lpoint1.png" class="p8_lpoint p8_lpoint1 op0">
+							<img src="img/page8/p8_lpoint2.png" class="p8_lpoint p8_lpoint2 op0">
+							<img src="img/page8/p8_rpoint1.png" class="p8_rpoint p8_rpoint1 op0">
+							<img src="img/page8/p8_rpoint2.png" class="p8_rpoint p8_rpoint2 op0">
+							<img src="img/page6/p6_man.png" class="p8_man op0">
+						</div>
+					</div>
+				</div>
+				<div class="p_bg p_bg2 p8_bg none">
+					<img src="img/page8/p8_title.png" class="p_title p8_title">
+					<div class="w100 p8_part1">
+						<img src="img/page8/p8_otxt.png" class="p8_otxt">
+						<img src="img/page8/p8_ttxt.png" class="p8_ttxt">
+						<img src="img/page8/p8_line.png" class="p8_line">
+						<img src="img/page8/p8_ktxt1.png" class="p8_ktxt p8_ktxt1">
+						<img src="img/page8/p8_ktxt2.png" class="p8_ktxt p8_ktxt2">
+						<img src="img/page6/p6_lizi.png" class="p8_lizi">
+						<div class="w100 p8_cont">
+							<img src="img/page8/p8_blue.png" class="p8_blue p8_blue1">
+							<img src="img/page8/p8_blue.png" class="p8_blue p8_blue2">
+							<img src="img/page8/p8_tgray.png" class="p8_tgray p8_tgray1">
+							<img src="img/page8/p8_tgray.png" class="p8_tgray p8_tgray2">
+							<img src="img/page8/p8_bgray.png" class="p8_bgray p8_bgray1">
+							<img src="img/page8/p8_bgray.png" class="p8_bgray p8_bgray2">
+							<img src="img/page8/p8_wtxt1.png" class="p8_wtxt p8_wtxt1">
+							<img src="img/page8/p8_wtxt2.png" class="p8_wtxt p8_wtxt2">
+							<img src="img/page8/p8_lpoint1.png" class="p8_lpoint p8_lpoint1">
+							<img src="img/page8/p8_lpoint2.png" class="p8_lpoint p8_lpoint2">
+							<img src="img/page8/p8_rpoint1.png" class="p8_rpoint p8_rpoint1">
+							<img src="img/page8/p8_rpoint2.png" class="p8_rpoint p8_rpoint2">
+							<img src="img/page6/p6_man.png" class="p8_man">
+						</div>
+					</div>
+				</div>
+				<div class="up up8 op0"><img src="../../common/img/up.png" alt=""></div>
+			</div>
+			<div class="wp swiper-slide" id="page9">
+				<div class="p_bg p_bg1 p9_bg">
+					<img src="img/page9/p9_title.png" class="p_title p9_title op0">
+					<img src="img/page9/p9_otxt.png" class="p9_otxt op0">
+					<img src="img/page9/p9_ttxt.png" class="p9_ttxt op0">
+					<img src="img/page6/p6_lizi.png" class="p9_lizi op0">
+					<div class="w100 p9_part1 op0">
+						<div class="w100 p9_biao">
+							<img src="img/page8/p8_blue.png" class="p8_blue p8_blue1">
+							<img src="img/page8/p8_blue.png" class="p8_blue p8_blue2">
+							<img src="img/page8/p8_tgray.png" class="p8_tgray p8_tgray2">
+							<img src="img/page8/p8_bgray.png" class="p8_bgray p8_bgray1">
+							<img src="img/page8/p8_bgray.png" class="p8_bgray p8_bgray2">
+							<img src="img/page8/p8_wtxt1.png" class="p8_wtxt p8_wtxt1">
+							<img src="img/page8/p8_wtxt2.png" class="p8_wtxt p8_wtxt2">
+							<img src="img/page8/p8_lpoint2.png" class="p8_lpoint p8_lpoint2">
+							<img src="img/page8/p8_rpoint1.png" class="p8_rpoint p8_rpoint1">
+							<img src="img/page8/p8_rpoint2.png" class="p8_rpoint p8_rpoint2">
+						</div>
+						<img src="img/page8/p8_tgray.png" class="p8_tgray p8_tgray1 p9_tgray1">
+						<img src="img/page8/p8_lpoint1.png" class="p8_lpoint p8_lpoint1 p9_lpoint1">
+						<img src="img/page9/p9_hand.png" class="p9_hand op0">
+						<img src="img/page9/p9_down.png" class="p9_down op0">
+						<img src="img/page9/p9_dtxt.png" class="p9_dtxt op0">
+						<div class="w100 p9_cont1">
+							<img src="img/page9/p9_say1.png" class="p9_say p9_say1 op0">
+							<img src="img/page9/p9_say2.png" class="p9_say p9_say2 op0">
+							<img src="img/page9/p9_doctor.png" class="p9_doctor op0">
+							<img src="img/page9/p9_btxt.png" class="p9_btxt op0">
+						</div>
+					</div>
+				</div>
+				<div class="p_bg p_bg2 p9_bg none">
+					<img src="img/page9/p9_title.png" class="p_title p9_title">
+					<img src="img/page9/p9_otxt.png" class="p9_otxt">
+					<img src="img/page9/p9_ttxt.png" class="p9_ttxt">
+					<img src="img/page6/p6_lizi.png" class="p9_lizi">
+					<div class="w100 p9_part1">
+						<img src="img/page8/p8_tgray.png" class="p8_tgray p8_tgray1 p9_tgray1">
+						<img src="img/page8/p8_lpoint1.png" class="p8_lpoint p8_lpoint1 p9_lpoint1">
+						<img src="img/page9/p9_down.png" class="p9_down">
+						<img src="img/page9/p9_dtxt.png" class="p9_dtxt">
+						<div class="w100 p9_cont1">
+							<img src="img/page9/p9_say1.png" class="p9_say p9_say1">
+							<img src="img/page9/p9_say2.png" class="p9_say p9_say2">
+							<img src="img/page9/p9_doctor.png" class="p9_doctor">
+							<img src="img/page9/p9_btxt.png" class="p9_btxt">
+						</div>
+					</div>
+				</div>
+				<div class="up up9 op0"><img src="../../common/img/up.png" alt=""></div>
+			</div>
+			<div class="wp swiper-slide" id="page10">
+				<img src="../../common/img/mark.png" class="p10_mark">
+				<div class="p_bg p_bg1 p10_bg">
+					<img src="img/page10/p10_title.png" class="p_title p10_title op0">
+					<div class="w100 p10_part1">
+						<img src="img/page3/p3_ttxt.png" class="p10_ttxt op0">
+						<img src="img/page3/p3_line.png" class="p10_line op0">
+						<img src="img/page3/p3_ktxt1.png" class="p10_ktxt p10_ktxt1 op0">
+						<img src="img/page3/p3_ktxt2.png" class="p10_ktxt p10_ktxt2 op0">
+						<img src="img/page3/p3_ktxt3.png" class="p10_ktxt p10_ktxt3 op0">
+						<img src="img/page3/p3_ktxt4.png" class="p10_ktxt p10_ktxt4 op0">
+						<img src="img/page3/p3_ktxt5.png" class="p10_ktxt p10_ktxt5 op0">
+						<img src="img/page10/p10_btxt.png" class="p10_btxt op0">
+					</div>
+				</div>
+				<div class="p_bg p_bg2 p10_bg none">
+					<img src="img/page10/p10_title.png" class="p_title p10_title">
+					<div class="w100 p10_part1">
+						<img src="img/page3/p3_ttxt.png" class="p10_ttxt">
+						<img src="img/page3/p3_line.png" class="p10_line">
+						<img src="img/page3/p3_ktxt1.png" class="p10_ktxt p10_ktxt1">
+						<img src="img/page3/p3_ktxt2.png" class="p10_ktxt p10_ktxt2">
+						<img src="img/page3/p3_ktxt3.png" class="p10_ktxt p10_ktxt3">
+						<img src="img/page3/p3_ktxt4.png" class="p10_ktxt p10_ktxt4">
+						<img src="img/page3/p3_ktxt5.png" class="p10_ktxt p10_ktxt5">
+						<img src="img/page10/p10_btxt.png" class="p10_btxt">
+					</div>
+				</div>
+				<div class="up up10 op0"><img src="../../common/img/up.png" alt=""></div>
+			</div>
+		</div>
+	</div>
+	<div class="sound" id="sound">
+		<audio src="audio/s1.mp3" id="sound1" preload="auto" data-end="false"></audio>
+		<audio src="audio/s2.mp3" id="sound2" preload="auto" data-end="false"></audio>
+		<audio src="audio/s3.mp3" id="sound3" preload="auto" data-end="false"></audio>
+		<audio src="audio/s4.mp3" id="sound4" preload="auto" data-end="false"></audio>
+		<audio src="audio/s5.mp3" id="sound5" preload="auto" data-end="false"></audio>
+		<audio src="audio/s6.mp3" id="sound6" preload="auto" data-end="false"></audio>
+		<audio src="audio/s7.mp3" id="sound7" preload="auto" data-end="false"></audio>
+		<audio src="audio/s8.mp3" id="sound8" preload="auto" data-end="false"></audio>
+		<audio src="audio/s9.mp3" id="sound9" preload="auto" data-end="false"></audio>
+	</div>
+</div>
+<div id="bottom" class="none">
+	<div class="bottomtiao">
+		<div class="tiao" id="tiao"></div>
+	</div>
+	<div class="swiper-pagination custom"></div>
+</div>
+<!-- 左边按钮start -->
+<div class="leftbtn none" id="leftbtn">
+	<div class="backbtn none" id="backbtn">
+		<img src="../../common/img/back.png" alt="">
+	</div>
+	<div class="menulogo" id="menulogo">
+		<img src="../../common/img/menu.png">
+	</div>
+</div>
+<!-- 左边按钮end -->
+	<div class="nav" id="nav">
+		<ul>
+			<li id="li0"  class="color-green">1：首页</li>
+			<li id="li1">2：开篇</li>
+			<li id="li2">3：风险管理五环节</li>
+			<li id="li3">4：一、风险识别(二)</li>
+			<li id="li4">5：一、风险识别(二)</li>
+			<li id="li5">6：二、风险估测</li>
+			<li id="li6">7：三、风险评估</li>
+			<li id="li7">8：四、选择风险管理技术</li>
+			<li id="li8">9：五、评估风险管理效果</li>
+			<li id="li9">10：总结</li>
+		</ul>		
+	</div>
+	<script src="../../common/js/loading.js"></script>
+	<script src="../../common/js/btn.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
